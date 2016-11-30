@@ -27,8 +27,8 @@ h1 {
 }
 
 .container {
-  max-width: 920px;
-  margin: 0;
+  max-width: 90%;
+  margin: 0 50px 0 50px;
   padding: 20px;
   background-color: white;
 }
@@ -113,9 +113,17 @@ article.page h2 {
 }
 
 /* Info Box Styles */
+
+.info-box {
+  display: flex;
+  align-self: flex-end;
+  padding-left: 75%;
+  padding-bottom: 20px;
+}
+
 .disclaimer {
-  width: 30%;
-  margin: 0 0 30px 30px;
+  width: 200px;
+  margin-top: -100px;
   padding: 20px;
   background-color: #EEE;
 }
