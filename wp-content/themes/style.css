@@ -113,14 +113,13 @@ article.page h2 {
 }
 
 /* Info Box Styles */
-.info-box {
+.disclaimer {
   width: 30%;
-  height: 200px;
   margin: 0 0 30px 30px;
   padding: 20px;
   background-color: #EEE;
 }
 
-.info-box h4 {
-  margin-bottom: 6px;
+.disclaimer h4 {
+  margin-bottom: 3px;
 }
