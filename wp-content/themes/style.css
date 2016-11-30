@@ -111,3 +111,16 @@ h1 {
 article.page h2 {
   font-size: 300%;
 }
+
+/* Info Box Styles */
+.info-box {
+  width: 30%;
+  height: 200px;
+  margin: 0 0 30px 30px;
+  padding: 20px;
+  background-color: #EEE;
+}
+
+.info-box h4 {
+  margin-bottom: 6px;
+}
