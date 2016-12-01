@@ -129,3 +129,38 @@ article.page h2 {
 .disclaimer h4 {
   margin-bottom: 3px;
 }
+
+/* Children Links */
+
+.children-links {
+  margin-bottom: 20px;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.children-links a:visited,
+.children-links a:link{
+  text-decoration: none;
+}
+
+.children-links li {
+  margin-right: 20px;
+}
+
+.children-links ul {
+  float: left;
+}
+
+.children-links .parent-link {
+  float: left;
+  margin-right: 20px;
+  padding-right: 20px;
+  border-right: 1px solid #DDD;
+  font-size: 120%;
+  font-weight: bold;
+}
+
+.children-links .parent-link a:link,
+.children-links .parent-link a:visited {
+  color: #EEE;
+}
