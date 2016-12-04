@@ -17,7 +17,6 @@ body {
 a:link,
 a:visited{
   color: rgb(96, 155, 173);
-  text-shadow: 1px 1px rgb(73, 75, 72);
 }
 
 h1 {
@@ -181,4 +180,20 @@ article.page h2 {
   margin-right: 20px;
   padding-right: 20px;
   border-right: 1px solid #DDD;
+}
+
+/* Post Styles*/
+
+.post h2 {
+  margin-bottom: 0;
+}
+
+p.post-info {
+  font-size: 90%;
+  color: #999;
+}
+
+p.post-info a:link,
+p.post-info a:visited {
+  color: #999;
 }
