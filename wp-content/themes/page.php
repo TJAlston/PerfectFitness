@@ -8,6 +8,10 @@ if (have_posts()) :
 
 <article class="post page">
 
+  <?php
+
+  if( has_children() OR $post->post_parent > 0) { ?>
+
   <nav class="site-nav children-links clearfix'>
 
     <span class="parent-link">
@@ -29,6 +33,8 @@ if (have_posts()) :
     </ul>
 
   </nav>
+
+<?php } ?>
 
   <h2> <?php the_title(); ?></h2>
   <?php the_content(); ?>

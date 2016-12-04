@@ -27,3 +27,12 @@ function get_top_ancestor_id() {
   }
   return $post->ID;
 }
+
+// Does page have children?
+
+function has_children() {
+   global $post;
+
+   $pages = get_pages('child_of=' . $post-> ID);
+   return count($pages);
+}
