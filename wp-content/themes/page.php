@@ -11,7 +11,7 @@ if (have_posts()) :
   <nav class="site-nav children-links clearfix'>
 
     <span class="parent-link">
-    <a href="<?php echo get_the_permalink(get_top_ancestor_id()); ?>">
+    <a href class='parent-title'="<?php echo get_the_permalink(get_top_ancestor_id()); ?>">
     <?php echo get_the_title(get_top_ancestor_id()); ?></a>
     </span>
 

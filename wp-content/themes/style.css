@@ -136,6 +136,9 @@ article.page h2 {
   margin-bottom: 20px;
   font-size: 15px;
   margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  margin-right: 20px;
 }
 
 .children-links a:visited,
@@ -163,4 +166,10 @@ article.page h2 {
 .children-links .parent-link a:link,
 .children-links .parent-link a:visited {
   color: #EEE;
+}
+
+.parent-title {
+  margin-right: 20px;
+  padding-right: 20px;
+  border-right: 1px solid #DDD;
 }
