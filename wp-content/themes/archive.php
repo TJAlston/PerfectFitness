@@ -50,7 +50,9 @@ if (have_posts()) :
 
   <!-- Format display that codes the date F (spell out month) jS(j-day without leading 0 - S suffix of day ie 4th) Y (year) g:i a'(exact time published)-->
 
-  <p>
+    <?php the_post_thumbnail(); ?>
+
+    <p>
     <?php echo get_the_excerpt(); ?>
     <a href="<?php the_permalink(); ?>"> Read more&raquo;</a>
   </p>
