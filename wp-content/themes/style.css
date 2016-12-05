@@ -197,3 +197,13 @@ p.post-info a:link,
 p.post-info a:visited {
   color: #999;
 }
+
+/* Photo Output Layout */
+
+.banner {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-left: 50px;
+  width: 80vw;
+}

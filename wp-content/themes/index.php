@@ -27,8 +27,9 @@ if (have_posts()) :
   //trim gets rid of the extra comma at the end of the categories section
    ?></p>
 
-  <?php the_post_thumbnail(); ?>
-  
+<span class="banner">
+  <?php the_post_thumbnail('banner-image'); ?>
+</span>
   <?php the_content(); ?>
 </article>
 
