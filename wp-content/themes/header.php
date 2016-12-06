@@ -9,8 +9,14 @@
 
 <body <?php body_class(); ?>>
 
-<div class="container">
+<div class="container" />
+
   <header class="site-header">
+
+    <div class="hd-search">
+      <?php get_search_form(); ?>
+    </div>
+
     <h1><a href="<?php echo home_URL ?>">
       <img class='pflogo' src="http://localhost:8888/wordpress/wp-content/uploads/2016/12/pfhorizontal.png" />
     </a></h1>
@@ -28,6 +34,5 @@
       ?>
       <?php wp_nav_menu( $args ); ?>
     </nav>
-
 
   </header>

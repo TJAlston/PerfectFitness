@@ -225,3 +225,24 @@ p.post-info a:visited {
   top: 0;
   left: 0;
 }
+
+/* Search */
+
+.hd-search {
+  float: right;
+}
+
+.search-submit {
+  background-color: rgb(96, 155, 173);
+  color: white;
+  padding: 5px 14px;
+  border: none;
+  font-weight: bold;
+  vertical-align: top;
+}
+
+.search-field {
+  vertical-align: top;
+  padding: 4px 0px;
+  border: 1px solid rgb(96, 155, 173);
+}
