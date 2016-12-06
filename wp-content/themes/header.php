@@ -11,7 +11,9 @@
 
 <div class="container">
   <header class="site-header">
-    <h1><a href="<?php echo home_URL ?>"><img src="http://localhost:8888/wordpress/wp-content/uploads/2016/12/pfhorizontal.png" height="150" width="400" /></a></h1>
+    <h1><a href="<?php echo home_URL ?>">
+      <img class='pflogo' src="http://localhost:8888/wordpress/wp-content/uploads/2016/12/pfhorizontal.png" />
+    </a></h1>
     <h5><?php bloginfo('description'); ?><?php if (is_page('group-classes')) { ?>
       Thank you for viewing our page!
     <?php } ?></h5>

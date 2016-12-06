@@ -207,3 +207,22 @@ p.post-info a:visited {
   margin-left: 50px;
   width: 80vw;
 }
+
+.pflogo {
+  margin-left: 22vw;
+  height: 24vh;
+  width: 40vw;
+}
+
+.has-thumbnail {
+  position: relative;
+  padding-left: 250px;
+  max-width: 600px;
+  height: 225px;
+}
+
+.post-thumbnail {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
