@@ -217,7 +217,6 @@ p.post-info a:visited {
 .has-thumbnail {
   position: relative;
   padding-left: 250px;
-  max-width: 600px;
   height: 225px;
 }
 

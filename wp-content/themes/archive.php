@@ -28,7 +28,7 @@ if (have_posts()) :
   <?php
   while (have_posts()) : the_post(); ?>
 
-<article class="post has-thumbnail">
+<article class="post <?php if ( has_post_thumbnail() ) {?> has-thumbnail <?php } ?>">
   <h2> <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 
   <p class="post-info"><?php the_time('F j, Y g:i a'); ?> | by <a href="<?php echo get_author_posts_url(get_the_author_meta('ID')); ?>"><?php the_author(); ?></a> | Posted in <?php
