@@ -22,5 +22,23 @@
 <span class="banner">
   <?php the_post_thumbnail('banner-image'); ?>
 </span>
-  <?php the_content(); ?>
+
+<?php if ( is_search() OR is_archive() ) { ?>
+
+<p>
+  <?php echo get_the_excerpt(); ?>
+  <a href="<?php the_permalink(); ?>"> Read more&raquo; </a>
+</p>
+
+<?php } else {
+  if ($post->post_excerpt) { ?>
+<p>
+  <?php echo get_the_excerpt(); ?>
+  <a href="<?php the_permalink(); ?>"> Read more&raquo;
+  </a>
+  <?php } else {
+    the_content();
+  }
+} ?>
+  <!-- <?php the_content(); ?> -->
 </article>

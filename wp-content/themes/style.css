@@ -203,8 +203,6 @@ p.post-info a:visited {
 .banner {
   display: flex;
   justify-content: center;
-  align-content: center;
-  margin-left: 50px;
   width: 80vw;
 }
 
