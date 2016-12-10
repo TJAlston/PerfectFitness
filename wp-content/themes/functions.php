@@ -37,10 +37,15 @@ function learningWordPress_setup() {
     'primary' => __('Primary Menu'),
     'footer' => __('Footer Menu')
   ));
+
   // Add featured image support
   add_theme_support('post-thumbnails');
   add_image_size('small-thumbnail', 200, 180, true);
   add_image_size('banner-image', 920, 300, true);
+
+  //Add post formata support
+  add_theme_support('post-formats', array('aside','gallery','link'));
+
 }
 
 add_action('after_setup_theme', 'learningWordPress_setup');

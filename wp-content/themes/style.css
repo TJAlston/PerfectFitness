@@ -42,12 +42,24 @@ h1 {
   margin-top: 20px;
 }
 
+
+/* Content Area */
 .post {
   border-bottom: 2px dotted rgba(73, 75, 72, 0.75);
 }
 
 .post:last-of-type {
   border-bottom: none;
+}
+
+/* Aside Area */
+.post-aside {
+  font-size: 125%;
+  background-color: #FFF5CB;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
 }
 
 /* Navigation*/
