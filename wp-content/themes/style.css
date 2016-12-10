@@ -232,6 +232,21 @@ p.post-info a:visited {
   color: #999;
 }
 
+.post-gallery {
+  margin-top: 10px;
+  background-color: #b3adad;
+  color: #FFF;
+  padding: 20px;
+}
+
+.post-gallery h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.post-gallery img {
+  background-color: rgb(246, 250, 250);
+}
 /* Photo Output Layout */
 
 .banner {
