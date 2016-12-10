@@ -233,10 +233,11 @@ p.post-info a:visited {
 }
 
 .post-gallery {
-  margin-top: 10px;
+  margin: 20px 0px 10px 0px;
   background-color: #b3adad;
   color: #FFF;
   padding: 20px;
+  border-bottom: none;
 }
 
 .post-gallery h2 {
