@@ -54,7 +54,8 @@ h1 {
 
 /* Aside Area */
 
-.post-aside {
+.post-aside,
+.post-link {
   font-size: 125%;
   background-color: #FFF5CB;
   padding: 20px;
@@ -67,6 +68,20 @@ h1 {
   font-size: 68%;
   margin: 0;
   color: grey;
+}
+
+/* Link Post Format Styles */
+.post-link {
+  padding: 0;
+  background-color: rgb(174, 230, 242);
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.post-link a {
+  display: block;
+  padding: 20px;
 }
 
 /* Navigation*/
