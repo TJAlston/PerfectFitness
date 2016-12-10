@@ -53,6 +53,7 @@ h1 {
 }
 
 /* Aside Area */
+
 .post-aside {
   font-size: 125%;
   background-color: #FFF5CB;
@@ -60,6 +61,12 @@ h1 {
   border-radius: 5px;
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
   margin-top: 10px;
+}
+
+.mini-meta {
+  font-size: 68%;
+  margin: 0;
+  color: grey;
 }
 
 /* Navigation*/
