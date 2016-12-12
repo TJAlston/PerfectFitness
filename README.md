@@ -1,3 +1,3 @@
 # PerfectFitness
 
-A website for an online community to discuss health and wellness tips, give advice and show positive support with fellow members that are on their personal journey to a healthy life.
+I wanted to create a blogging site that discusses health and wellness tips, share inspirational stories and gives positive motivational advice to have a healthier life.
