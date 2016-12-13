@@ -299,6 +299,7 @@ p.post-info a:visited {
 .home-columns {
   display: flex;
   flex-direction: row;
+  padding-top: 10px;
 }
 
 .right-column {

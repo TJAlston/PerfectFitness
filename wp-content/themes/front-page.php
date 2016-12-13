@@ -58,8 +58,12 @@ if (have_posts()) :
 
     while ($importantPosts->have_posts()) : $importantPosts->the_post(); ?>
 
-    <h2><?php the_title(); ?></h2>
-    <p><?php the_excerpt(); ?></p>
+    <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+
+<div class="articleSection">
+  <p><?php the_excerpt(); ?></p>
+  <?php the_post_thumbnail('small-thumbnail'); ?>
+</div>
 
   <?php endwhile;
 
@@ -78,8 +82,12 @@ if (have_posts()) :
 
       while ($newsPosts->have_posts()) : $newsPosts->the_post(); ?>
 
-      <h2><?php the_title(); ?></h2>
+      <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+
+    <div class="articleSection">
       <p><?php the_excerpt(); ?></p>
+      <?php the_post_thumbnail('small-thumbnail'); ?>
+    </div>
 
     <?php endwhile;
 
