@@ -47,5 +47,23 @@ if (have_posts()) :
 
   endif;
 
+
+//opinion posts loop beings here
+
+$importantPosts = new WP_Query('cat=11&posts_per_page=2&orderby=title');
+
+  if ($importantPosts->have_posts()) :
+
+    while ($importantPosts->have_posts()) : $importantPosts->the_post(); ?>
+
+    <h2><?php the_title(); ?></h2>
+    <p><?php the_content(); ?></p>
+
+  <?php endwhile;
+
+  else :
+
+  endif;
+
 get_footer();
  ?>
