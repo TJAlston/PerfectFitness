@@ -50,20 +50,22 @@ if (have_posts()) :
 
 //opinion posts loop beings here
 
-$importantPosts = new WP_Query('cat=11&posts_per_page=2&orderby=title');
+$importantPosts = new WP_Query('cat=&posts_per_page=2&orderby=title');
 
   if ($importantPosts->have_posts()) :
 
     while ($importantPosts->have_posts()) : $importantPosts->the_post(); ?>
 
     <h2><?php the_title(); ?></h2>
-    <p><?php the_content(); ?></p>
+    <p><?php the_excerpt(); ?></p>
 
   <?php endwhile;
 
   else :
 
   endif;
+  // reset wordpress data
+  wp_reset_postdata();
 
 get_footer();
  ?>
