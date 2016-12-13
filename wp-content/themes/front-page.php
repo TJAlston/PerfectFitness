@@ -46,11 +46,13 @@ if (have_posts()) :
     echo '<p> No content found</p>';
 
   endif;
+?>
 
+<!-- important loop beings here -->
 
-//important posts loop beings here
-
-$importantPosts = new WP_Query('cat=14&posts_per_page=2&orderby=title');
+<div class="home-columns clearfix">
+  <div class="left-column">
+  <?php $importantPosts = new WP_Query('cat=14&posts_per_page=2&orderby=title');
 
   if ($importantPosts->have_posts()) :
 
@@ -66,8 +68,11 @@ $importantPosts = new WP_Query('cat=14&posts_per_page=2&orderby=title');
   endif;
   // reset wordpress data
   wp_reset_postdata();
-  
-  $newsPosts = new WP_Query('cat=24&posts_per_page=2&orderby=title');
+?>
+</div>
+
+<div class="right-column">
+  <?php $newsPosts = new WP_Query('cat=24&posts_per_page=2&orderby=title');
 
     if ($newsPosts->have_posts()) :
 
@@ -83,5 +88,8 @@ $importantPosts = new WP_Query('cat=14&posts_per_page=2&orderby=title');
     endif;
     // reset wordpress data
     wp_reset_postdata();
+    ?>
+</div>
+<?php
 get_footer();
  ?>
