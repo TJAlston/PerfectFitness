@@ -48,9 +48,9 @@ if (have_posts()) :
   endif;
 
 
-//opinion posts loop beings here
+//important posts loop beings here
 
-$importantPosts = new WP_Query('cat=&posts_per_page=2&orderby=title');
+$importantPosts = new WP_Query('cat=14&posts_per_page=2&orderby=title');
 
   if ($importantPosts->have_posts()) :
 
@@ -66,6 +66,22 @@ $importantPosts = new WP_Query('cat=&posts_per_page=2&orderby=title');
   endif;
   // reset wordpress data
   wp_reset_postdata();
+  
+  $newsPosts = new WP_Query('cat=24&posts_per_page=2&orderby=title');
 
+    if ($newsPosts->have_posts()) :
+
+      while ($newsPosts->have_posts()) : $newsPosts->the_post(); ?>
+
+      <h2><?php the_title(); ?></h2>
+      <p><?php the_excerpt(); ?></p>
+
+    <?php endwhile;
+
+    else :
+
+    endif;
+    // reset wordpress data
+    wp_reset_postdata();
 get_footer();
  ?>
